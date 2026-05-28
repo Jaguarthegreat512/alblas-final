@@ -28,6 +28,9 @@ Player createPlayer(const std::string& name, PlayerClass pClass) {
     p.resources["Netherite"] = 0;
     p.resources["Food"]      = 5;
 
+    p.day  = 1;
+    p.hour = 8;
+
     // Class-specific stats (conditionals used here)
     if (pClass == PlayerClass::WARRIOR) {
         p.className   = "Warrior";
@@ -77,6 +80,10 @@ void printPlayerStats(const Player& player) {
 
     std::cout << Color::BRIGHT_YELLOW << "  Gold  : " << Color::WHITE
               << player.gold << "\n";
+
+    std::cout << Color::BRIGHT_YELLOW << "  Day   : " << Color::WHITE
+              << player.day << "  " << Color::BRIGHT_YELLOW << "Time: "
+              << Color::WHITE << (player.hour < 10 ? "0" : "") << player.hour << ":00\n";
 
     // Print biome
     std::string biome = (player.currentBiome == 0) ? "Overworld" : "Nether";

@@ -38,6 +38,8 @@ struct Player {
     // World state
     int currentBiome;   // 0 = Overworld, 1 = Nether
     int depth;          // how many rooms deep the player is
+    int day;            // day counter for overworld cycle
+    int hour;           // hour in the day (0-23)
     int gold;
 
     // Inventory: map of item name -> Item

@@ -29,6 +29,8 @@ void saveGame(const Player& player, const std::string& filename) {
     file << player.xpToNextLevel << "\n";
     file << player.currentBiome << "\n";
     file << player.depth << "\n";
+    file << player.day << "\n";
+    file << player.hour << "\n";
     file << player.gold << "\n";
     file << player.equippedWeapon << "\n";
     file << player.equippedArmor << "\n";
@@ -76,6 +78,8 @@ bool loadGame(Player& player, const std::string& filename) {
     file >> player.xpToNextLevel;
     file >> player.currentBiome;
     file >> player.depth;
+    file >> player.day;
+    file >> player.hour;
     file >> player.gold;
     file.ignore();
     std::getline(file, player.equippedWeapon);
