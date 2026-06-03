@@ -1,0 +1,37 @@
+jude
+0
+Warrior
+120
+100
+15
+10
+1
+50
+100
+0
+1
+15
+Stone Sword
+Leather Armor
+6
+Diamond
+0
+Food
+6
+Iron
+0
+Netherite
+0
+Stone
+2
+Wood
+4
+2
+Leather Armor
+armor
+4
+1
+Stone Sword
+weapon
+10
+1
